@@ -134,6 +134,14 @@ int main(){
         }
     }
 
+    // en.soma_areas += (tempo_decorrido - en.tempo_anterior) * en.num_eventos;
+
+    ew_chegadas.soma_areas += (tempo_decorrido - ew_chegadas.tempo_anterior) * ew_chegadas.num_eventos;
+    ew_chegadas.num_eventos++;
+
+    ew_saidas.soma_areas += (tempo_decorrido - ew_saidas.tempo_anterior) * ew_saidas.num_eventos;
+    ew_saidas.num_eventos++;
+
     printf("Maior tamanho de fila alcancado: %ld\n",fila_max);
     printf("Ocupacao: %lF\n",soma_ocupacao/tempo_decorrido);
 
